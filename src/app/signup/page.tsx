@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
-  const [AccType, setAccType] = useState("client");
+  const [AccType, setAccType] = useState();
   const notify = () => toast.success("Account created succefully!");
   return (
     <main className="flex flex-col h-screen items-center justify-center p-24">
@@ -45,12 +45,10 @@ export default function Home() {
               Account Type
             </label>
             <select
-              value={AccType}
-              onChange={(e) => setAccType(e.target.value)}
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
             >
-              <option value="client">Customer</option>
-              <option value="vendor">Vendor</option>
+              <option value="volvo">Customer</option>
+              <option value="saab">Vendor</option>
             </select>
           </div>
           
@@ -60,7 +58,7 @@ export default function Home() {
           >
             Forget Password?
           </Link>
-          <Link href={`/${AccType}`} className="mt-2">
+          <Link href='/client' className="mt-2">
             <ToastContainer />
             <button onClick={notify} className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
               Sign up

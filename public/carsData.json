@@ -1,0 +1,65 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "color": "Silver",
+        "mileage": 15000,
+        "rentalDetails": {
+          "available": true,
+          "rentalPricePerDay": 50
+        }
+      },
+      {
+        "id": 2,
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2021,
+        "color": "Blue",
+        "mileage": 12000,
+        "rentalDetails": {
+          "available": false,
+          "rentalPricePerDay": 45
+        }
+      },
+      {
+        "id": 3,
+        "make": "Ford",
+        "model": "Escape",
+        "year": 2020,
+        "color": "Red",
+        "mileage": 18000,
+        "rentalDetails": {
+          "available": true,
+          "rentalPricePerDay": 55
+        }
+      },
+      {
+        "id": 4,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2022,
+        "color": "White",
+        "mileage": 10000,
+        "rentalDetails": {
+          "available": true,
+          "rentalPricePerDay": 60
+        }
+      },
+      {
+        "id": 5,
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2021,
+        "color": "Black",
+        "mileage": 15000,
+        "rentalDetails": {
+          "available": true,
+          "rentalPricePerDay": 55
+        }
+      }
+    ]
+  }
+  
